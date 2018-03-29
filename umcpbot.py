@@ -62,3 +62,7 @@ async def addgame_error(ctx, error):
 async def removegame_error(ctx, error):
     if isinstance(error, discord.DiscordException.Forbidden):
         ctx.send("Can't do that, sorry.")
+#-----------------------------------------------------------
+# Run
+#-----------------------------------------------------------
+bot.run(discToken)
